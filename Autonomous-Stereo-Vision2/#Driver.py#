@@ -1,0 +1,11 @@
+import serial
+
+class Driver(object):
+    def __init__(self, velocity=None, angle=None):
+        self.velocity = velocity
+        self.angle = angle
+
+        self.drive(velocity, angle)
+
+    def drive(self, velocity, angle):
+        
